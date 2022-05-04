@@ -4,8 +4,8 @@ const port = 8000
 const mongoose = require('mongoose')
 const keys = require('./config/keys');
 const bodyParser = require('body-parser')
-const Todo = require('./models/todo');
-const todoRoutes = require('./routes/todos')
+const Photo = require('./models/photo');
+const photoRoutes = require('./routes/photos')
 
 
 mongoose.connect(keys.mongoURI, {useNewUrlParser: true})
@@ -22,7 +22,7 @@ app.use( express.static(__dirname + '/public'))
 app.get('/', (red,res)=>{
     res.render('index')
 })
-app.use('/todos', todoRoutes)
+app.use('/photos', photoRoutes)
 
 app.listen(port , ()=>{
     console.log('server has been started')
