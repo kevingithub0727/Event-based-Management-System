@@ -1,60 +1,43 @@
 $(document).ready(async function(){
-    const todos = await $.getJSON('/todos/api')
-    console.log(todos)
-    showTodos(todos)
-
     $('#inputField').focus();
 
     $('#inputForm').on('submit', function(e){
-        e.preventDefault();
-        createTodo();
+        e.preventDefault();    
+        showPhotos();
+    })
+    $('#inputForm2').on('submit', function(e){
+        e.preventDefault();    
+        showPhotos2();
     })
 
-    $('#todo-list').on('click', '.text', function(){
-        updateTodo($(this))
-    })
-
-    $('#todo-list').on('click', '.delete', function(){
-        removeTodo($(this).parent())
-    })
+    
+    
 })
 
-function showTodos (todos) {
-    for(let item of todos) {
-        showTodo(item)
+async function showPhotos () {
+    let inputFieldValue = $('#inputField').val()
+    const photos = await $.post('/photos/imageTitle', {inputField: inputFieldValue})
+    for(let item of photos) {
+        showPhoto(item)
     }
 }
 
-function showTodo (todo) {
-    let elem = $(`<li><span class="text ${todo.isCompleted ? 'completed' : ''}">${todo.text}</span><span class="delete"> x </span></li>`)
-    $('#todo-list').prepend(elem);
-    elem.data('id', todo._id)
-    elem.data('isCompleted', todo.isCompleted)
+async function showPhotos2 () {
+    let inputFieldValue2 = $('#inputField2').val()
+    const photos = await $.post('/photos/month', {inputField2: inputFieldValue2})
+    for(let item of photos) {
+        showPhoto2(item)
+    }
 }
 
-async function updateTodo(elem){
-    const updatedTodo = await $.ajax({
-        type: 'PUT',
-        url : `/todos/api/${elem.parent().data('id')}`,
-        data: { isCompleted: !elem.parent().data('isCompleted')}
-    })
-    elem.toggleClass('completed')
+function showPhoto (photo) {
+    let elem = $(`<li><span class="text">${photo.imageTitle + " " + photo.date + " " + photo.month}</span><br></br><img src= "${'./images/' + photo.imageName}" width= "200px" height= "200px"></li>`)
+    $('#photo-list').prepend(elem);
+    elem.data('id', photo._id)
 }
 
-async function removeTodo(elem){
-    const deletedTodo = await $.ajax({
-        type :'Delete',
-        url: `/todos/api/${elem.data('id')}`
-    })
-    elem.remove();
-}
-
-async function createTodo(){
-    const userInput = $('#inputField').val();
-    console.log(userInput)
-    const createdTodo = await $.post('/todos/api', {text: userInput})
-    $('#inputField').val('');
-    $('#inputField').focus();
-    showTodo(createdTodo);
-
+function showPhoto2 (photo) {
+    let elem2 = $(`<li><span class="text">${photo.imageTitle + " " + photo.date + " " + photo.month}</span><br></br><img src= "${'./images/' + photo.imageName}" width= "200px" height= "200px"></li>`)
+    $('#photo-list2').prepend(elem2);
+    elem2.data('id', photo._id)
 }
