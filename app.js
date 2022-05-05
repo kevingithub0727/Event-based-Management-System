@@ -5,17 +5,6 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const Todo = require('./models/todo');
 const todoRoutes = require('./routes/todos')
-// jose
-//var fs = require('fs');
-//var path = require('path');
-//require('dotenv/config');
-// Step 2 - connect to the database - jose
-/* mongoose.connect("mongodb://localhost:3306/CS664_Photos",
-	{ useNewUrlParser: true, useUnifiedTopology: true }, err => {
-		console.log('connected')
-	});
- */
-// jose end 
 
 const keys = require('./config/keys');  
 const Photo = require('./models/photo');
