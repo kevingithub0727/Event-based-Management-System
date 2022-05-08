@@ -12,20 +12,21 @@ router.post('/imageTitle', async (req, res)=>{
     res.json(photos)
 })
 
-router.post('/imageName', async (req, res)=>{
+router.post('/month', async (req, res)=>{
     console.log(req);
     const photos = await Photo.find(
-        { "imageName": { "$regex": req.body.inputField, "$options": "si"} } 
+        { "month": { "$regex": req.body.inputField2, "$options": "i" } } 
     );
     res.json(photos)
 })
 
-router.post('/month', async (req, res)=>{
+router.post('/owner', async (req, res)=>{
     console.log(req);
     const photos = await Photo.find(
-        { "month": { "$regex": req.body.inputField2, "$options": "si" } } 
+        { "owner": { "$regex": req.body.inputField3, "$options": "i"} } 
     );
     res.json(photos)
 })
+
 
 module.exports = router
