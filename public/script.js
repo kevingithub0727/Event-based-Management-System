@@ -57,3 +57,21 @@ function showPhoto3 (photo) {
     $('#photo-list3').prepend(elem3);
     elem3.data('id', photo._id)
 }
+
+// Initialize and add the map
+function initMap() {
+    // The location of Uluru
+    const sf = { lat: -122.431, lng: 37.773 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 8,
+      center: sf,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: sf,
+      map: map,
+    });
+  }
+  
+  window.initMap = initMap;

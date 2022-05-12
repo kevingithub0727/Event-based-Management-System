@@ -13,11 +13,9 @@ span {
 /* body {
     background-color: #87b4f8;
     } */
-.h3{
 
-}
 body {
-    display: flex; 
+     display: flex; 
     justify-content: center; 
     /* align-items: center; */
     background: #e8e8e8;
@@ -34,3 +32,11 @@ body {
     column-count:5;
     column-gap:5px;
 }  */
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 200px;
+    /* The default height is 400 pixels */
+    width: 30%;
+    /* The width is the width of the web page Default 100% */
+  }
