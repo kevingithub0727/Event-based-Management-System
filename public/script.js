@@ -60,14 +60,14 @@ function showPhoto3 (photo) {
 
 // Initialize and add the map
 function initMap() {
-    // The location of Uluru
-    const sf = { lat: -122.431, lng: 37.773 };
-    // The map, centered at Uluru
+    // The location of San Francisco
+    const sf = { lat: 37.791350, lng: -122.435883 };
+    // The map, centered at San Francisco
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 8,
+      zoom: 10,
       center: sf,
     });
-    // The marker, positioned at Uluru
+    // The marker, positioned at San Francisco
     const marker = new google.maps.Marker({
       position: sf,
       map: map,

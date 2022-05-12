@@ -15,12 +15,19 @@ span {
     } */
 
 body {
-     display: flex; 
-    justify-content: center; 
+    /*  display: flex;  */
+    /* justify-content: center;  */
     /* align-items: center; */
     background: #e8e8e8;
     font-family: 'helvetive neue', sans-serif;
     font-weight: 700;
+}
+
+.ul.photo-list{
+    background: #ffe5e5;
+    color: darkred;
+    padding: 5px;
+    margin-left: 35px;
 }
 /* gallery tag not being used*/
 /* .gallery{
@@ -37,6 +44,6 @@ body {
 #map {
     height: 200px;
     /* The default height is 400 pixels */
-    width: 30%;
+    width: 40%;
     /* The width is the width of the web page Default 100% */
   }
