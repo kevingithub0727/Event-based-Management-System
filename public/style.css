@@ -1,4 +1,4 @@
-.delete {
+/* .delete {
     color:red
 }
 
@@ -8,12 +8,14 @@ span {
 
 .completed {
     text-decoration: line-through
-}
+} */
 
 /* body {
     background-color: #87b4f8;
     } */
-
+h3{
+    color: rgb(0, 2, 139);
+}
 body {
     /*  display: flex;  */
     /* justify-content: center;  */
@@ -22,13 +24,81 @@ body {
     font-family: 'helvetive neue', sans-serif;
     font-weight: 700;
 }
+#inputForm{
+    border: 1px solid black;
+    background: hsl(85, 100%, 95%);
+    position: relative;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    /* margin-left: 55px; */
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#inputForm2{
+    border: 1px solid black;
+    background: hsl(141, 100%, 95%);
+    color: rgb(8, 117, 35);
+    position: relative;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* margin-left: 55px; */
 
-.ul.photo-list{
+}
+#inputForm3{
+    border: 1px solid black;
+    background: rgb(204, 203, 247);
+    color: rgb(60, 0, 139);
+    position: relative;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* margin-left: 55px; */
+
+}
+
+#inputForm4{
+    border: 1px solid black;
+    background: rgb(105, 238, 101);
+    color: rgb(60, 0, 139);
+    position: relative;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* margin-left: 55px; */
+
+}
+
+/* .ul.photo-list{
     background: #ffe5e5;
     color: darkred;
     padding: 5px;
     margin-left: 35px;
-}
+} */
+
 /* gallery tag not being used*/
 /* .gallery{
     line-height:0;
@@ -42,8 +112,15 @@ body {
 
 /* Set the size of the div element that contains the map */
 #map {
-    height: 200px;
+    height: 300px;
     /* The default height is 400 pixels */
-    width: 40%;
+    width: 57%;
     /* The width is the width of the web page Default 100% */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 45px;
+    margin-bottom: 1px;
+    margin-right: 100px;
+    margin-left: 580px;
   }

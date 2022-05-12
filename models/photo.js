@@ -7,8 +7,8 @@ const photoSchema = new Schema({
     imageTitle: String,
     date: String,
     month: String,
-    owner: String
-   
+    owner: String,
+    location: String
 })
 
 module.exports = mongoose.model('Photo', photoSchema)

@@ -27,6 +27,12 @@ router.post('/owner', async (req, res)=>{
     );
     res.json(photos)
 })
-
+router.post('/location', async (req, res)=>{
+    console.log(req);
+    const photos = await Photo.find(
+        { "location": { "$regex": req.body.inputField4, "$options": "i"} } 
+    );
+    res.json(photos)
+})
 
 module.exports = router
