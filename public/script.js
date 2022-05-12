@@ -17,6 +17,11 @@ $(document).ready(async function(){
         e.preventDefault();    
         showPhotos4();
     })
+
+    /* $('#inputForm5').on('submit', function(e){
+        e.preventDefault();    
+        showPhotos5();
+    }) */
  
     
 })
@@ -51,6 +56,13 @@ async function showPhotos4 () {
     }
 }
 
+/* async function showPhotos5 () {
+    let inputFieldValue5 = $('#inputField5').val()
+    const photos = await $.post('/photos/imageName', {inputField5: inputFieldValue5})
+    for(let item of photos) {
+        showPhoto5(item)
+    }
+} */
 
 function showPhoto (photo) {
     let elem = $(`<li><span class="text">${photo.imageTitle + " " + photo.date + " " + photo.month + " " + photo.owner + " in " + photo.location}</span><br></br><img src= "${'./images/' + photo.imageName}" width= "200px" height= "200px"></li>`)
@@ -75,6 +87,11 @@ function showPhoto4 (photo) {
     $('#photo-list4').prepend(elem4);
     elem4.data('id', photo._id)
 }
+/* function showPhoto5 (photo) {
+    let elem5 = $(`<li><span class="text">${photo.imageTitle + " " + photo.date + " " + photo.month + " " + photo.owner + " in " + photo.location}</span><br></br><img src= "${'./images/' + photo.imageName}" width= "200px" height= "200px"></li>`)
+    $('#photo-div5').prepend(elem5);
+    elem5.data('id', photo._id)
+} */
 
 // Initialize and add the map
 function initMap() {
@@ -93,3 +110,37 @@ function initMap() {
   }
   
   window.initMap = initMap;
+
+  // testing new code 
+
+const rightButton = document.querySelector('.button-arrow.-right');
+const leftButton = document.querySelector('.button-arrow.-left');
+const cards = document.querySelector('.cards');
+let totalPixels = 0;
+
+function moveToRight() {
+  totalPixels += 100;
+  cards.style.transform = `translateX(${totalPixels}px)`;
+}
+
+function moveToLeft() {
+  totalPixels -= 100;
+  cards.style.transform = `translateX(${totalPixels}px)`;
+}
+
+rightButton.addEventListener('click', moveToRight);
+
+leftButton.addEventListener('click', moveToLeft);
+
+document.addEventListener('keyup', event => {
+  const key = event.key;
+
+  if (key === 'ArrowRight') {
+    moveToRight();
+  }
+
+  if (key === 'ArrowLeft') {
+    moveToLeft();
+  }
+});
+// end of testing new code 
