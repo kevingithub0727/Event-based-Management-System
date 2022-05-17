@@ -2,4 +2,12 @@
  Full event photo app that allows you to query by title of the image and by month and displays the photo. If the key word is "snow" and/or "october"/"july", after querying by month or image title, the app will display images that have similar dataset with the same values.
 
 # How to set up in running the app
-## hi
+## MongoDB Community & MongoDB Compass Tool
+ We used MongoDB for our database and specifically MongoDB Compass for its GUI. You can download MongoDB community & Compass through these links 
+https://www.mongodb.com/try/download/community https://www.mongodb.com/try/download/compass
+1.After connecting to your local database set up your database called "eventdb" and its collection "photos".
+2. Click "ADD DATA" and select "Insert Document" and paste the JSON values in our json folder provided in the main repository. 
+
+## Running the app
+1. Open your terminal, and go to the project folder directory. 
+2. Run the command "nodemon" and make sure your terminal looks like this: ![image](https://user-images.githubusercontent.com/40307623/168748323-fd55a778-cdc8-4459-96d3-9a6a2f871075.png)
