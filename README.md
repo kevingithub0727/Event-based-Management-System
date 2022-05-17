@@ -5,13 +5,18 @@
 ## MongoDB Community & MongoDB Compass Tool
  We used MongoDB for our database and specifically MongoDB Compass for its GUI. You can download MongoDB community & Compass through these links 
 https://www.mongodb.com/try/download/community https://www.mongodb.com/try/download/compass
+
 1.After connecting to your local database set up your database called "eventdb" and its collection "photos".
+
 2. Click "ADD DATA" and select "Insert Document" and paste the JSON values in our json folder provided in the main repository. 
 
 ## Running the app
 1. Open your terminal, and go to the project folder directory. 
-2. Run the command "nodemon" and make sure your terminal looks like this: 
+
+3. Run the command "nodemon" and make sure your terminal looks like this: 
+
 ![image](https://user-images.githubusercontent.com/40307623/168748323-fd55a778-cdc8-4459-96d3-9a6a2f871075.png)
+
 3. Once the app is successfully running, open a new browser and enter "http://localhost:8000/"
 
 ## Play & Test
