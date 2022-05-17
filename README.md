@@ -10,4 +10,9 @@ https://www.mongodb.com/try/download/community https://www.mongodb.com/try/downl
 
 ## Running the app
 1. Open your terminal, and go to the project folder directory. 
-2. Run the command "nodemon" and make sure your terminal looks like this: ![image](https://user-images.githubusercontent.com/40307623/168748323-fd55a778-cdc8-4459-96d3-9a6a2f871075.png)
+2. Run the command "nodemon" and make sure your terminal looks like this: 
+![image](https://user-images.githubusercontent.com/40307623/168748323-fd55a778-cdc8-4459-96d3-9a6a2f871075.png)
+3. Once the app is successfully running, open a new browser and enter "http://localhost:8000/"
+
+## Play & Test
+Now you can go ahead and play around with its functions and test incomplete words to see if any events are displayed. 
