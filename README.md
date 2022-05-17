@@ -6,7 +6,7 @@
  We used MongoDB for our database and specifically MongoDB Compass for its GUI. You can download MongoDB community & Compass through these links 
 https://www.mongodb.com/try/download/community https://www.mongodb.com/try/download/compass
 
-1.After connecting to your local database set up your database called "eventdb" and its collection "photos".
+1. After connecting to your local database set up your database called "eventdb" and its collection "photos".
 
 2. Click "ADD DATA" and select "Insert Document" and paste the JSON values in our json folder provided in the main repository. 
 
