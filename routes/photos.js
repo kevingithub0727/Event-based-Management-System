@@ -12,6 +12,7 @@ router.post('/imageTitle', async (req, res)=>{
     res.json(photos)
 })
 
+
 router.post('/month', async (req, res)=>{
     console.log(req);
     const photos = await Photo.find(
