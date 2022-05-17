@@ -8,7 +8,10 @@ https://www.mongodb.com/try/download/community https://www.mongodb.com/try/downl
 
 1. After connecting to your local database set up your database called "eventdb" and its collection "photos".
 
-2. Click "ADD DATA" and select "Insert Document" and paste the JSON values in our json folder provided in the main repository. 
+2. Click "ADD DATA" and select "Insert Document" and paste the JSON values one by one contained in our json folder which is provided in the main repository. Then click "Insert". It should look something like this as one input:
+
+![image](https://user-images.githubusercontent.com/40307623/168750087-e897d803-cf71-49ed-9bc7-a53cc4dc37bb.png)
+
 
 ## Running the app
 1. Open your terminal, and go to the project folder directory. 
