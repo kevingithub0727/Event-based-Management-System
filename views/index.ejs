@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Final-Project CSC664 Multimedia</title>
+    <!--<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
 </head>
 <body>
+    
+<h2 style="margin-block-start: 2px; text-align:center">Event-based grouping and interaction with personal multimedia information</h2> 
     <form id="inputForm">
         <input id="inputField" type="text" name="text" placeholder="Search event here">
         <button>Submit</button>
@@ -21,12 +30,113 @@
         </form>
         <ul id="photo-list2">
             </ul>
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous">
-</script>
-<script src="script.js"></script>
+
+            <form id="inputForm3">
+                <input id="inputField3" type="text" name="text" placeholder="Search by name">
+                <button>Submit</button>
+            </form>
+            <ul id="photo-list3">
+                </ul>
+
+                <form id="inputForm4">
+                    <input id="inputField4" type="text" name="text" placeholder="Search by location">
+                    <button>Submit</button>
+                </form>
+                <ul id="photo-list4">
+                    </ul>
+                    <!-- testing gallery-->
+                    <!-- <form id="inputForm5">
+                        <input id="inputField5" type="text" name="text" placeholder="Gallery">
+                        <button>Submit</button>
+                    </form>
+                    <div id="photo-div5"></div>  -->
+                     <!-- end of testing gallery-->   
+
+                <div id="map">
+                    <!-- 
+                        // GOOGLE MAPS API
+                       The `defer` attribute causes the callback to execute after the full HTML
+                       document has been parsed. For non-blocking uses, avoiding race conditions,
+                       and consistent behavior across browsers, consider loading using Promises
+                       with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+                    -->
+                   <script 
+                       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLQbCpMRwV8bgBNxGMcsMwJniGT99xyEQ&callback=initMap"
+                       defer>
+                   </script>
+                   
+               </div> 
+<!-- Testing code for a timeline carousel, still in progress-->
+<section class="main-carousel">
+    <button class="button-arrow -left" title="click for next">
+      <span class="content">Next</span>
+    </button>
+  
+    <div class="items">
+      <div class="cards">
+        <article class="node-card">
+          <h2 class="main-title -second">2017</h2>
+          <div class="logo">
+            <img src="Todo-list/public/images/birthday.jpg" alt="">
+          </div>
+        </article>
+  
+        <article class="node-card">
+          <h2 class="main-title -second">2018</h2>
+          <div class="logo -no-padding">
+            <img class="image" src="Todo-list/public/images/concert.jpg" alt="">
+          </div>
+        </article>
+  
+        <article class="node-card">
+          <h2 class="main-title -second">2019</h2>
+          <div class="logo -bg-red">
+            <img src="Todo-list/public/images/family.jpg" alt="">
+          </div>
+        </article>
+  
+        <article class="node-card">
+          <h2 class="main-title -second">2020</h2>
+          <div class="logo -no-padding">
+            <img class="image" src="Todo-list/public/images/graduation.jpg" alt="">
+          </div>
+        </article>
+  
+        <article class="node-card">
+          <h2 class="main-title -second">2021</h2>
+          <div class="logo">
+            <img src="Todo-list/public/images/goat.jpg" alt="">
+          </div>
+        </article>
+  
+        <article class="node-card">
+          <h2 class="main-title -second">2022</h2>
+          <div class="logo -bg-red">
+            <img src="Todo-list/public/images" alt="">
+          </div>
+        </article>
+      </div>
+    </div>
+  
+    <button class="button-arrow -right" title="photo-list3">
+      <span class="content">Next</span>
+    </button>
+  </section>
+<!-- End of Testing timeline carousel code -->
+
+
+<!-- Testing video -->
+<h4>The video element</h4>
+
+<video width="320" height="240" controls>
+  <source src="../Desktop/videos/20190724_221145.mp4" type="video/mp4">
+  <source src="../Desktop/videos/20190724_221145.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<!-- End of Testing video -->
+</body>
+</html>
+
 </body>
 <body>
     <div class="container">

@@ -1,5 +1,10 @@
 # Event Management Photo app
  Full event photo app that allows you to query by title of the image and by month and displays the photo. If the key word is "snow" and/or "october"/"july", after querying by month or image title, the app will display images that have similar dataset with the same values.
+<<<<<<< HEAD
+=======
+# Event Management Photo app
+ Full event photo app that allows you to query by title of the image and by month and displays the photo. If the key word is "snow" and/or "october"/"july", after querying by month or image title, the app will display images that have similar dataset with the same values.
+>>>>>>> jose
 
 # How to set up in running the app
 ## MongoDB Community & MongoDB Compass Tool
@@ -23,4 +28,8 @@ https://www.mongodb.com/try/download/community https://www.mongodb.com/try/downl
 3. Once the app is successfully running, open a new browser and enter "http://localhost:8000/"
 
 ## Play & Test
+<<<<<<< HEAD
 Now you can go ahead and play around with its functions and test incomplete words to see if any events are displayed. 
+=======
+Now you can go ahead and play around with its functions and test incomplete words to see if any events are displayed. 
+>>>>>>> jose
